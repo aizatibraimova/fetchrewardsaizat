@@ -2,37 +2,84 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url('backgound1.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+  border:  none;
+  background-color: rgb(206, 226, 244);
+}
+
+
+.label{
+  display: block;
+  font-size: larger;
   color: white;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+ 
+.input{
+  font-size: larger;
+  padding: 5px;
+  margin: 5px;
+  border: 2px ;
+  font-family: 'Montserrat', sans-serif;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  color: black;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  background: white;
+  border: none;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.messages{
+  display: flex;
+  justify-content: center
 }
+ 
+.error{
+  display: block;
+  color: rgb(236, 52, 52);
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+ 
+.success{
+  display: block;
+  color: blue;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
